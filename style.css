@@ -16,8 +16,8 @@ body::before {
   pointer-events: none;
   background: url("bg.jpg") no-repeat center;
   background-size: cover;
-  -webkit-animation: backgroundZoomAnimate 20s forwards;
-          animation: backgroundZoomAnimate 20s forwards;
+  -webkit-animation: backgroundZoomAnimate 30s forwards;
+          animation: backgroundZoomAnimate 30s forwards;
 }
 
 @-webkit-keyframes backgroundZoomAnimate {
@@ -64,4 +64,39 @@ body::before {
      object-fit: cover;
   display: block;
   box-shadow: 0 10px 60px -10px rgba(13, 28, 39, 0.5);
+}
+.profile-card_desc {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.profile-card_desc h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.profile-card_desc h1 + div {
+  font-size: 20px;
+}
+.profile-card__info {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+@media screen and (max-width: 576px) {
+  .profile-card__info {
+    gap: 33px;
+  }
+}
+.profile-card__info > div {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.profile-card__info > *:first-child {
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 2rem;
+  margin-bottom: 15px;
 }/*# sourceMappingURL=style.css.map */
