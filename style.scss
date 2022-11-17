@@ -16,7 +16,7 @@ body {
         pointer-events:none;
         background: url("bg.jpg") no-repeat center;
         background-size: cover;
-        animation: backgroundZoomAnimate 30s forwards;
+        animation: backgroundZoomAnimate 40s forwards;
     }
 }
 
@@ -53,9 +53,9 @@ body {
         box-shadow: 0 10px 60px -10px rgba(13, 28, 39, .5);
     }
     &_img {
-        transition: all 0.2s;
+        transition: all 0.4s;
         &:hover {
-            transform: scale(1.3);
+            transform: scale(1.4) translateY(-5px);
         }
     }
     &_desc {
